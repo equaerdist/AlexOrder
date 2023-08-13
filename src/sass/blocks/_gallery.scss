@@ -1,0 +1,112 @@
+.gallery.ext {
+  padding-top: 135px;
+}
+.gallery {
+  &__header {
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: -21px;
+      transform: translateY(-50%);
+      content: "";
+      background: url("../png/arrowDark.png") center center / cover no-repeat;
+      width: 7px;
+      height: 12px;
+    }
+    margin-left: 21px;
+    color: #0a0137;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  &__item {
+    margin-top: 39px;
+  }
+  padding-bottom: 118px;
+  &__img {
+    width: 100%;
+    border-radius: 15px;
+    height: 250px;
+    object-fit: cover;
+  }
+  &__img.ext {
+    width: 192px;
+    height: 174px;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  min-height: 452px;
+  &__slider {
+    margin-top: 42px;
+  }
+  .left {
+    margin-right: 15px;
+    &:after {
+      background-image: url("../png/galleryPrev.svg");
+    }
+  }
+  &__button {
+    position: relative;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      content: "";
+      width: 7px;
+      height: 12px;
+      background: url("../png/galleryNext.svg") center center / cover no-repeat;
+    }
+    border-radius: 10px;
+    border: 2px solid #c3c0d7;
+    &_active {
+      border-color: $text_color_dark_purple;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .gallery {
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery {
+    padding-top: 42px;
+    &__buttons {
+      display: none;
+    }
+    &__img {
+      border-radius: 15px;
+      height: 212px;
+      width: 203px;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 474px) {
+  .gallery {
+    padding-bottom: 15px;
+    min-height: 400px;
+    &__slider {
+      margin-top: 34px;
+      width: 70%;
+      margin-inline: auto;
+    }
+    &__img {
+      width: 100%;
+    }
+    &__img.ext {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.hello {
+  background: url("../img/helloSection.jpg") center center / cover no-repeat;
+  min-height: 100vh;
+  padding-top: 184px;
+  padding-bottom: 129px;
+  &_partner {
+    background-image: url("../img/partnerSection.jpg");
+  }
+  &__title {
+    span {
+      font-weight: 700;
+    }
+    &_wide {
+      width: 634px;
+    }
+    width: 601px;
+    font-size: 45px;
+    font-weight: 500;
+    color: $text_color;
+    line-height: 50px;
+  }
+  &__text.ext {
+    font-weight: 400;
+  }
+  &__text {
+    margin-top: 22px;
+    line-height: 22px;
+    color: $text_color;
+    width: 618px;
+    font-weight: 500;
+    font-size: $main_font_size;
+  }
+  &__button {
+    padding-right: 58px;
+    &_white {
+      &:after {
+        background-image: url("../png/arrowDark.png");
+      }
+      color: #0a0037;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      background-color: #ffffff;
+    }
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: unset;
+    margin-left: 33px;
+  }
+  &__buttons {
+    margin-top: 44px;
+  }
+}
+@media (max-width: 1232px) {
+  .hello {
+    &__text {
+      width: 529px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hello {
+    &__title {
+      width: 314px;
+      font-size: 26px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 34px;
+    }
+    &__text {
+      width: 100%;
+      color: #fff;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px; /* 150% */
+      margin-top: 24px;
+    }
+    &__button {
+      padding-right: 58px;
+      margin-top: 19px;
+      margin-left: 0;
+    }
+    button {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px; /* 157.143% */
+      &:first-child {
+        margin-top: 46px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .hello_partner {
+    padding-bottom: 69px;
+    .hello__buttons {
+      margin-top: 42px;
+    }
+    .hello__button_white {
+      padding-top: 20px;
+      &::after {
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url("../png/arrowWhite.png");
+      }
+      &:first-child {
+        text-align: start;
+        color: #fff;
+        background-color: #6812f3;
+        margin-top: 0;
+      }
+    }
+    background-position: 40%;
+    background-image: url("../img/helloSection.jpg");
+    .hello__title {
+      width: 100%;
+      font-size: 26px;
+      font-weight: 400;
+    }
+  }
+}

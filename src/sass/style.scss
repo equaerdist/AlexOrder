@@ -1,0 +1,52 @@
+@import "./main/variables";
+@import "./blocks/fonts";
+@import "./blocks/header";
+@import "./blocks/title";
+@import "./blocks/button";
+@import "./blocks/hello";
+@import "./blocks/modal/modal";
+@import "./libs/bootstrap-reboot.min.css";
+@import "./blocks/products";
+@import "./blocks/about";
+@import "./blocks/gallery";
+@import "./blocks/form";
+@import "./blocks/contacts";
+@import "./blocks/footer";
+@import "./blocks/productPage/product";
+@import "./blocks/productPage/advantages";
+@import "./blocks//productPage/questions";
+@import "./blocks/partnerPage/impact";
+@import "./libs/animate.css";
+* {
+  font-family: "Manrope", sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1040px;
+  display: block;
+  margin: 0 auto;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+@media (max-width: 1232px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+    padding-inline: 0;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding-inline: 24px;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "third",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "babel-loader": "^9.1.2",
+    "core-js": "^3.30.2",
+    "corejs": "^1.0.0",
+    "tiny-slider": "^2.9.4",
+    "webpack": "^5.82.1"
+  }
+}

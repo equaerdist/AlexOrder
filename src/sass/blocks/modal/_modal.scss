@@ -1,0 +1,140 @@
+.modal {
+  &__img {
+    margin-top: 46px;
+    border-radius: 100%;
+    width: 76px;
+    height: 76px;
+    display: block;
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 38px;
+      height: 25px;
+      content: "";
+      background-image: url("../png/correcter.svg");
+    }
+    background-color: #7daf75;
+    margin-inline: auto;
+  }
+  &_thank {
+    &-text {
+      margin-top: 15px;
+      color: #1d1743;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .modal__form-text {
+      margin-top: 40px;
+    }
+  }
+  &_active {
+    visibility: visible;
+  }
+  background-color: rgba(13, 12, 30, 0.65);
+  backdrop-filter: blur(25px);
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  display: flex;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  &__main {
+    margin-top: 41px;
+  }
+  &__close {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: -72px;
+    top: -41px;
+  }
+  &__form {
+    input {
+      margin-top: 7px;
+      height: 49px;
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background-color: #ebe9f1;
+    }
+    label {
+      margin-top: 20px;
+      display: block;
+      color: #1f1737;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-text {
+      color: #1f1737;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; /* 108.333% */
+    }
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-inline: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    width: 376px;
+    min-height: 430px;
+    border-radius: 15px;
+    background-color: #ffffff;
+  }
+  .request {
+    position: relative;
+    &::after {
+      width: 17px;
+      height: 10px;
+      right: 47px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      position: absolute;
+      background: url("../png/arrowRequest.svg") center center / cover no-repeat;
+    }
+  }
+  &__button {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    text-align: center;
+    width: 100%;
+    margin-top: 22px;
+    border: none;
+    color: #fff;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    background-color: #272dbb;
+  }
+  &__details {
+    margin-top: 19px;
+    color: #898989;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+@media (max-width: 576px) {
+  .modal {
+    &__close {
+      right: 25px;
+    }
+  }
+}

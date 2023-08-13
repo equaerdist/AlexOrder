@@ -1,0 +1,119 @@
+.about {
+  min-height: 548px;
+  &__text {
+    .weight {
+      font-weight: 700;
+    }
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    font-size: $main_font_size;
+    font-weight: 500;
+    color: $text_color_dark_purple;
+    &-right {
+      width: 500px;
+    }
+    &-left {
+      width: 507px;
+      margin-left: 35px;
+    }
+  }
+  &__certificates {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__certificate {
+    display: flex;
+    align-items: center;
+    &-text {
+      width: 114px;
+      font-size: $main_font_size;
+      font-weight: 500;
+      color: $text_color_dark_purple;
+      margin-left: 27px;
+    }
+    width: 199px;
+    &-download {
+      display: inline-block;
+      width: 58px;
+      height: 58px;
+      border-radius: 12px;
+      background-color: #e2e3f2;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 16.5px;
+        height: 24px;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        background: url("../png/downloadDark.png") center center / cover
+          no-repeat;
+      }
+    }
+  }
+}
+@media (max-width: 883px) {
+  .about {
+    &__certificates {
+      padding-bottom: 25px;
+      flex-wrap: wrap;
+    }
+    &__certificate {
+      margin-top: 23px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding-bottom: 64px;
+    &__certificates {
+      margin-top: 6px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    &__certificate {
+      margin-top: 42px;
+      align-items: start;
+      width: 93px;
+      flex-direction: column;
+      &-text {
+        width: 100%;
+        margin-top: 14px;
+        margin-left: 0;
+        color: #070128;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+      }
+      &-download {
+        &:after {
+          width: 11px;
+          height: 16px;
+        }
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &__text {
+      flex-direction: column;
+      &-right {
+        width: 100%;
+      }
+      &-left {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .about {
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

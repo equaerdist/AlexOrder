@@ -1,0 +1,55 @@
+$button_color: #6812f3;
+$text_color: #ffffff;
+$text_color_purple: #8256ff;
+$text_color_dark_purple: #070128;
+$text_color_title: #0a0137;
+$font_size_title: 40px;
+$main_font_size: 16px;
+$font_weight_title: 700;
+@mixin href {
+  &__back {
+    a {
+      text-decoration: none;
+      color: #05071e;
+    }
+    color: #7a7d98;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+@mixin slider {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left {
+    margin-right: 15px;
+    &:after {
+      background-image: url("../png/galleryPrev.svg");
+    }
+  }
+  &__button {
+    position: relative;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      content: "";
+      width: 7px;
+      height: 12px;
+      background: url("../png/galleryNext.svg") center center / cover no-repeat;
+    }
+    border-radius: 10px;
+    border: 2px solid #c3c0d7;
+    &_active {
+      border-color: $text_color_dark_purple;
+    }
+  }
+}

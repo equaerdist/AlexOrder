@@ -1,0 +1,43 @@
+.button {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    transform: translateY(-50%);
+    right: 39px;
+    width: 7px;
+    height: 12px;
+    background: url("../png/arrowWhite.png") center center / cover no-repeat;
+  }
+  color: $text_color;
+  padding-top: 20px;
+  padding-inline: 29px;
+  font-size: 18px;
+  padding-right: 68px;
+  padding-bottom: 23px;
+  font-weight: 700;
+  background-color: $button_color;
+  border: none;
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .button {
+    &:after {
+      top: 31px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .button {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 157.143% */
+    &:after {
+      top: 32px;
+    }
+  }
+}

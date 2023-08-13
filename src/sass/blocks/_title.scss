@@ -1,0 +1,21 @@
+.title {
+  line-height: 1;
+  font-size: $font_size_title;
+  color: $text_color_title;
+  font-weight: $font_weight_title;
+}
+@media (max-width: 768px) {
+  .title {
+    line-height: 46px;
+  }
+}
+
+@media (max-width: 575px) {
+  .title {
+    color: #0a0137;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 192.308% */
+  }
+}

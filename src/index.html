@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Page" content="General" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <script src="./js/bundle.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
+  <body>
+    <div class="mobile__header">
+      <img src="./png/burger.png" alt="" class="mobile__burger" />
+      <div class="mobile__text">ЭСТИВАЛЬ</div>
+      <a href="tel:+74957270506">
+        <img src="./png/phone.png" alt="" class="mobile__phone" />
+      </a>
+    </div>
+    <header class="header">
+      <div class="mobile__header">
+        <img src="./png/tic.png" alt="" class="mobile__burger" />
+        <div class="mobile__text">ЭСТИВАЛЬ</div>
+        <a href="tel:+74957270506">
+          <img src="./png/phoneWhite.png" alt="" class="mobile__phone" />
+        </a>
+      </div>
+      <a href="./index.html">
+        <img src="./png/logo.png" alt="companyLogo" class="header__logo" />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__links">
+          <li class="header__link"><a href="#about">О компании</a></li>
+          <li class="header__link products-item mobile">
+            Продукция
+            <ul
+              class="dropbox animate__animated animate__faster"
+              style="display: none"
+            >
+              <li><a href="Collection.html">Грязесобиращие решетки</a></li>
+              <li>
+                <a href="Collection.html">Комбинированные покрытия</a>
+              </li>
+              <li><a href="Collection.html">Ворсовые покрытия</a></li>
+              <li><a href="Collection.html">Для влажных помещений</a></li>
+            </ul>
+          </li>
+          <li class="header__link">
+            <a href="./photogallery.html">Фотогалерея</a>
+          </li>
+          <li class="header__link"><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts not-mobile">
+        <img
+          src="./png/phoneWhite.png"
+          alt="phoneImage"
+          class="header__phone"
+        />
+        <a href="tel:+74957270506" class="header__phone-number"
+          >+ 7 (495) 727-0506</a
+        >
+      </div>
+    </header>
+    <section class="hello">
+      <div class="container">
+        <p class="hello__title">Профессиональные грязезащитные покрытия</p>
+        <p class="hello__text">
+          Комплексное решение вопроса защиты помещений и зданий от уличной
+          грязи. В настоящее время ЭСТИВАЛЬ является разработчиком и
+          производителем специальных тамбурных грязезащитных покрытий модульного
+          типа.
+        </p>
+        <div class="hello__buttons">
+          <button class="button">Бесплатная консультация</button>
+          <button class="button hello__button">Дистрибьюторам</button>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products__title title">Продукция</div>
+        <div class="products__grid">
+          <div class="products__grid-item first-horizontal">
+            <img
+              src="./img/gridShadow.png"
+              alt="imageOfProduct"
+              class="products__grid-img"
+            /><span class="products__grid-text"
+              >Грязесобирающие<br />
+              решётки</span
+            >
+          </div>
+          <div class="products__grid-item">
+            <img
+              src="./img/floorShadow.jpg"
+              alt="imageOfProduct"
+              class="products__grid-img"
+            /><span class="products__grid-text"
+              >Компинированные<br />
+              покрытия</span
+            >
+          </div>
+          <div class="products__grid-item">
+            <img
+              src="./img/blocksShadow.jpg"
+              alt="imageOfProduct"
+              class="products__grid-img"
+            /><span class="products__grid-text"
+              >Ворсовые<br />
+              покрытия</span
+            >
+          </div>
+          <div class="products__grid-item">
+            <img
+              src="./img/floorShadow.jpg"
+              alt="imageOfProduct"
+              class="products__grid-img"
+            /><span class="products__grid-text">Аксессуары</span>
+          </div>
+          <div class="products__grid-item">
+            <img
+              src="./img/blocksShadow.jpg"
+              alt="imageOfProduct"
+              class="products__grid-img"
+            /><span class="products__grid-text">Банные тапочки</span>
+          </div>
+          <div class="products__grid-item second-horizontal">
+            <img
+              src="./img/waterFloor.jpg"
+              alt="imageOfProduct"
+              class="products__grid-img"
+            /><span class="products__grid-text"
+              >Покрытия <br />для влажных помещений</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__title title">О компании</div>
+        <div class="about__text">
+          <p class="about__text-right">
+            Компания ЭСТИВАЛЬ основана в 1997 году.<br /><span class="weight">
+              Основной вид деятельности
+            </span>
+            - комплексное решение <br />вопроса защиты помещений и зданий от
+            уличной грязи.<br /><br />В настоящее время ЭСТИВАЛЬ является
+            разработчиком и производителем специальных тамбурных грязезащитных
+            покрытий модульного типа.
+          </p>
+          <p class="about__text-left">
+            В 2002 году компания была
+            <span class="weight">преобразована в холдинг</span>.
+            <span class="weight"> В его состав вошли: </span> производственная
+            компания ЗАО "МПТК ЭСТИВАЛЬ", контролирующая производственные
+            процессы, <br />и ЗАО "Торговый дом ЭСТИВАЛЬ", осуществляющий
+            реализацию продукции. <br /><br />Вся производимая
+            <span class="weight">продукция отвечает европейским стандартам</span
+            >, запатентована и имеет необходимые сертификаты.
+          </p>
+        </div>
+        <div class="about__certificates">
+          <div class="about__certificate">
+            <a href="" class="about__certificate-download"></a
+            ><span class="about__certificate-text"
+              >Сертификат соответствия</span
+            >
+          </div>
+          <div class="about__certificate">
+            <a href="" class="about__certificate-download"></a
+            ><span class="about__certificate-text"
+              >Сертификат соответствия</span
+            >
+          </div>
+          <div class="about__certificate">
+            <a href="" class="about__certificate-download"></a
+            ><span class="about__certificate-text"
+              >Сертификат соответствия</span
+            >
+          </div>
+          <div class="about__certificate">
+            <a href="" class="about__certificate-download"></a
+            ><span class="about__certificate-text"
+              >Сертификат соответствия</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="wrapper">
+          <div class="gallery__title title">Фотогалерея</div>
+          <div class="gallery__buttons">
+            <button class="gallery__button left"></button
+            ><button
+              class="gallery__button right gallery__button_active"
+            ></button>
+          </div>
+        </div>
+
+        <div class="gallery__slider">
+          <div>
+            <img src="./img/floor.jpg" alt="Аксессуары" class="gallery__img" />
+          </div>
+          <div>
+            <img src="./img/blocks.jpg  " alt="покрытия" class="gallery__img" />
+          </div>
+          <div>
+            <img
+              src="./img/ladder.jpg"
+              alt="покрытие на лестнице"
+              class="gallery__img"
+            />
+          </div>
+          <div>
+            <img
+              src="./img/water.jpg"
+              alt="покрытие на влажном полу"
+              class="gallery__img"
+            />
+          </div>
+          <div>
+            <img src="./img/door.jpg" alt="дверь" class="gallery__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <div class="container">
+        <div class="form__details">
+          <div class="form__text">
+            <p class="form__title">
+              <span class="weight">Станьте партнером</span> надежной компании и
+              получите <span class="weight">лучшие условия</span> на продукцию
+            </p>
+            <p class="form__text-details">
+              Здесь Вы легко сможете найти поставщика любой группы углей или
+              новые рынки сбыта для своей продукции. Благодаря аукционной
+              системе
+            </p>
+          </div>
+          <div class="form__main">
+            <form action="#" class="form__form">
+              <label for="name">Ваше ФИО</label>
+              <input name="name" type="text" />
+              <label for="phone">Контактный телефон</label>
+              <input type="text" name="phone" />
+              <label for="location">Местоположение</label>
+              <input type="text" name="location" />
+              <button class="button form__button">Оставить заявку</button>
+            </form>
+            <p class="form__read-more">
+              Здесь Вы легко сможете найти поставщика любой группы углей или
+              новые рынки сбыта для своей продукции. Благодаря аукционной
+              системе
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="wrapper">
+          <div class="contacts__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.0268940760875!2d37.782008577146094!3d55.7406616929258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aca9c7415a01f%3A0x1c624c3ff2292bc6!2z0JrRg9GB0LrQvtCy0YHQutCw0Y8g0YPQuy4sIDIwLCDQnNC-0YHQutCy0LAsIDExMTE0MQ!5e0!3m2!1sru!2sru!4v1690232658313!5m2!1sru!2sru"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contacts__info">
+            <p class="contacts__title title">Контакты</p>
+            <p class="contacts__office">Центральный офис</p>
+            <ul class="contacts__sensetive-info">
+              <li class="contacts__si-item">
+                111141, г. Москва , ул. Кусковская, дом 20
+              </li>
+              <li class="contacts__si-item location">
+                Телефон/факс: (495) 727 - 0506
+              </li>
+              <li class="contacts__si-item email">E-mail: mail@astival.ru</li>
+            </ul>
+            <p class="contacts__descr">
+              <span>Региональные представители</span>
+              Для уточнения координат представителя в Вашем городе или области,
+              обратитесь в наш московский офис. Продукция может быть отгружена в
+              любую точку России.
+            </p>
+            <button class="contacts__button button">Перезвоните мне</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="wrapper">
+          <div class="footer__logo">
+            <img src="./png/invertLogo.png" alt="Логотип" />
+            <p class="footer__logo-text">
+              Крупнейший производитель грязезащитных покрытий
+            </p>
+          </div>
+          <ul class="footer__info">
+            <li class="footer__ii weight">Информация</li>
+            <li class="footer__ii"><a href="#about">О компании</a></li>
+            <li class="footer__ii"><a href="#gallery">Фотогалерея</a></li>
+            <li class="footer__ii"><a href="#contacts">Контакты</a></li>
+          </ul>
+          <ul class="footer__products">
+            <li class="footer__pi weight">Продукция</li>
+            <li class="footer__pi"><a href="">Грязезащитные покрытия</a></li>
+            <li class="footer__pi"><a href="">Грязезащитные покрытия</a></li>
+            <li class="footer__pi"><a href="">Грязезащитные покрытия</a></li>
+            <li class="footer__pi"><a href="">Грязезащитные покрытия</a></li>
+          </ul>
+          <div class="footer__contacts">
+            <ul class="footer__credentials">
+              <li class="footer__ci phone">+ 7 (495) 727-0506</li>
+              <li class="footer__ci email">Mail@astival.ru</li>
+            </ul>
+            <p class="footer__credentials-details">
+              Вся представленная инфомация на сайте не является публичной
+              офертой
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__form">
+        <img src="./png/tic.png" alt="кнопка закрыть" class="modal__close" />
+        <div class="modal__form-text">Заявка на заказ</div>
+        <form action="#" class="modal__main">
+          <label for="name">Ваше ФИО</label>
+          <input name="name" type="text" class="modal__form-input" />
+          <label for="phone">Контактный телефон</label>
+          <input name="phone" type="text" class="modal__form-input" />
+          <button class="modal__button request">Оставить заявку</button>
+        </form>
+        <div class="modal__details">
+          Здесь Вы легко сможете найти поставщика любой группы углей или новые
+          рынки сбыта для своей продукции. Благодаря аукционной системе
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__form">
+        <img src="./png/tic.png" alt="кнопка закрыть" class="modal__close" />
+        <div class="modal__form-text">Заявка на консультацию</div>
+        <form action="#" class="modal__main">
+          <label for="name">Ваше ФИО</label>
+          <input name="name" type="text" class="modal__form-input" />
+          <label for="phone">Контактный телефон</label>
+          <input name="phone" type="text" class="modal__form-input" />
+          <button class="modal__button request">Оставить заявку</button>
+        </form>
+        <div class="modal__details">
+          Здесь Вы легко сможете найти поставщика любой группы углей или новые
+          рынки сбыта для своей продукции. Благодаря аукционной системе
+        </div>
+      </div>
+    </div>
+    <!--     чтобы сделать модальное окно активным есть класс modal_active -->
+    <div class="modal modal_thank">
+      <div class="modal__form">
+        <img src="./png/tic.png" alt="кнопка закрыть" class="modal__close" />
+        <div class="modal__img"></div>
+        <div class="modal__form-text">Спасибо за оставленную заявку</div>
+        <div class="modal_thank-text">Мы свяжемся с Вами в ближайшее время</div>
+        <div class="modal__button">Вернуться на сайт</div>
+      </div>
+    </div>
+  </body>
+</html>
